@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icons8-instagram</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons8-instagram" fill="#7BA7AF" fill-rule="nonzero">
+            <path d="M13,0 C5.83,0 0,5.83 0,13 L0,31 C0,38.17 5.83,44 13,44 L31,44 C38.17,44 44,38.17 44,31 L44,13 C44,5.83 38.17,0 31,0 L13,0 Z M34,8 C35.1,8 36,8.9 36,10 C36,11.1 35.1,12 34,12 C32.9,12 32,11.1 32,10 C32,8.9 32.9,8 34,8 Z M22,11 C28.07,11 33,15.93 33,22 C33,28.07 28.07,33 22,33 C15.93,33 11,28.07 11,22 C11,15.93 15.93,11 22,11 Z M22,13 C17.04,13 13,17.04 13,22 C13,26.96 17.04,31 22,31 C26.96,31 31,26.96 31,22 C31,17.04 26.96,13 22,13 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
