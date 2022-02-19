@@ -18,18 +18,18 @@
 
     <div class="header__logo logo">
       <a href="/" class="logo__link">
-        <img src="img/logo.png" alt="logo" class="logo__img">
+        <img src="img/logo.png" alt="logo" class="logo__img" width="230" height="139">
       </a>
     </div>
 
     <div class="header__menu menu">
       <div class="menu__dropdown">
-        <!-- menu__top появляется когда menu__dropdown раскрыт т.е opened -->
-        <div class="menu__top">
+        <!-- menu__header появляется когда menu раскрыто в mobile т.е opened -->
+        <div class="menu__header">
           <button type="button" class="menu__close"></button>
           <div class="menu__content">
             <div class="menu__content-img">
-              <img src="img/menu-logo.png" alt="logo" class="menu__content-img-elem">
+              <img src="img/menu__logo.png" alt="logo" width="78" height="21" class="menu__content-img-elem">
             </div>
             <div class="menu__content-desc">
               Современная Семейная Стоматология
@@ -37,7 +37,8 @@
           </div>
           <a class="menu__content-phone-button phone-button" href="tel:+74956528305"></a>
         </div>
-        <!-- menu__top end -->
+        <!-- menu__header end -->
+
         <!-- menu__list start -->
         <ul class="menu__list">
           <li class="menu__item">
@@ -60,33 +61,31 @@
           </li>
         </ul>
         <!-- menu__list end -->
-        <!-- .menu__bottom start -->
-        <div class="menu__bottom">
-          <!-- contacts start-->
-          <ul class="menu__contacts contacts">
-            <li class="contacts__item">
-              <a href="tel:+74956528305" class="phone">8 (495) 652-83-05</a>
-              <a href="#" class="contacts__link">Заказать обратный звонок</a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+79250858985" class="phone">8 (925) 085-89-85</a>
-              <a href="#" class="contacts__link">Заказать обратный звонок</a>
-            </li>
-          </ul>
-          <!-- contacts end -->
-        </div>
-        <!-- .menu__bottom end -->
+
+        <!-- menu__contacts появляется когда menu раскрыто в mobile т.е opened -->
+        <ul class="menu__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:+74956528305" class="contacts__phone phone">8 (495) 652-83-05</a>
+            <a href="#" class="contacts__link">Заказать обратный звонок</a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+79250858985" class="contacts__phone phone">8 (925) 085-89-85</a>
+            <a href="#" class="contacts__link">Заказать обратный звонок</a>
+          </li>
+        </ul>
+        <!-- menu__contacts end -->
       </div>
     </div>
 
-    <div class="header__contacts-wrap">
+    <div class="header__service">
       <!-- contacts start-->
-      <ul class="contacts">
+      <ul class="header__contacts contacts">
         <li class="contacts__item">
-          <a href="tel:+74956528305" class="phone">8 (495) 652-83-05</a>
+          <a href="tel:+74956528305" class="contacts__phone phone">8 (495) 652-83-05</a>
         </li>
       </ul>
       <!-- contacts end -->
+
       <!-- socials start -->
       <ul class="header__socials socials">
         <li class="socials__item">
