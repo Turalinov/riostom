@@ -8,10 +8,10 @@
   <title>Главная страница</title>
 </head>
 
+
   <body>
     <div class="wrapper">
-      <div class="wrapper__content">
-        <!-- header -->
+      <div class="wrapper__content wrapper__content--direction">
         <header class="header">
   <div class="container">
 
@@ -21,7 +21,7 @@
       </a>
     </div>
 
-    <div class="header__menu menu">
+    <nav class="header__menu menu">
       <div class="menu__dropdown">
         <!-- menu__header появляется когда menu раскрыто в mobile т.е opened -->
         <div class="menu__header">
@@ -74,7 +74,7 @@
         </ul>
         <!-- menu__contacts end -->
       </div>
-    </div>
+    </nav>
 
     <div class="header__service">
       <!-- contacts start-->
@@ -119,8 +119,6 @@
   </div>
 </header>
 
-
-        <!-- main -->
         <main>
           <section>
   <div class="container">
@@ -128,46 +126,94 @@
   </div>
 </section>
 
-
-          
         </main>
+      </div>
 
-        <!-- footer -->
-        <footer class="footer">
+      <footer class="footer">
   <div class="container">
-    footer
-    <!-- <div class="footer__col">
-      <ul class="footer__links">
-        <li class="footer__link">
-          <a href="agreement.html" class="footer__link-item">Пользовательское
-            соглашение</a>
+
+    <div class="footer__logo">
+      <div class="footer__logo-img">
+        <img src="img/menu__logo.svg" alt="logo" class="footer__logo-img-elem" width="143" height="38">
+      </div>
+      <div class="footer__logo-desc">
+        Современная Семейная<br>Стоматология
+      </div>
+    </div>
+
+    <nav class="footer__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Направления лечения</a>
         </li>
-        <li class="footer__link">
-          <a href="politics.html" class="footer__link-item">Политика
-            конфиденциальности</a>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Примеры работ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Врачи</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Цены</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer__phones">
+      <div class="footer__phones-desc">Запишитесь к врачу на консультацию:</div>
+
+      <ul class="footer__phones__contacts contacts">
+        <li class="contacts__item">
+          <a href="tel:+74956528305" class="contacts__phone phone">8 (495) 652-83-05</a>
+          <a href="#" class="contacts__link">Заказать обратный звонок</a>
+        </li>
+        <li class="contacts__item">
+          <a href="tel:+79250858985" class="contacts__phone phone">8 (925) 085-89-85</a>
+          <a href="#" class="contacts__link">Заказать обратный звонок</a>
         </li>
       </ul>
     </div>
-    <div class="footer__col">
-      <ul class="footer__property">
-        <li class="footer__property-item">
-         ФИО Гасанова Н.В.
-        </li>
-        <li class="footer__property-item">
-         ИНН 760411800515
-        </li>
-        <li class="footer__property-item">
-          Техническая поддержка:<br>info_kissme@mail.ru
-        </li>
-      </ul>
-    </div> -->
+
+    <div class="footer__additional">
+      <a href="#" class="footer__additional-link">Политика конденфициальности</a>
+      <a href="#" class="footer__additional-link">Дизайн - Чувилина Дарья</a>
+    </div>
+
+
+    <ul class="footer__socials socials">
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="img/telegram.svg" alt="Telegram" class="socials__img">
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="img/vk.svg" alt="VK" class="socials__img">
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="img/instagram.svg" alt="Instagram" class="socials__img">
+        </a>
+      </li>
+    </ul>
+
+
+
   </div>
 </footer>
 
-
-
-      </div>
     </div>
+
+    <script src="js/app.min.js"></script>
+  </body>
+
+  </html>
 
 
 
