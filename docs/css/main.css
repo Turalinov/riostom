@@ -1,10 +1,13 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
 /* Document
    ========================================================================== */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -14,9 +17,11 @@ html {
 
 /* Sections
    ========================================================================== */
+
 /**
  * Remove the margin in all browsers.
  */
+
 body {
   margin: 0;
 }
@@ -24,6 +29,7 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
+
 main {
   display: block;
 }
@@ -32,6 +38,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -39,10 +46,12 @@ h1 {
 
 /* Grouping content
    ========================================================================== */
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
+
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -56,6 +65,7 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -65,9 +75,11 @@ pre {
 
 /* Text-level semantics
    ========================================================================== */
+
 /**
  * Remove the gray background on active links in IE 10.
  */
+
 a {
   background-color: transparent;
 }
@@ -76,18 +88,21 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
+
 abbr[title] {
   border-bottom: none;
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+
 b,
 strong {
   font-weight: bolder;
@@ -97,6 +112,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 code,
 kbd,
 samp {
@@ -109,6 +125,7 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
+
 small {
   font-size: 80%;
 }
@@ -117,6 +134,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+
 sub,
 sup {
   font-size: 75%;
@@ -135,19 +153,23 @@ sup {
 
 /* Embedded content
    ========================================================================== */
+
 /**
  * Remove the border on images inside links in IE 10.
  */
+
 img {
   border-style: none;
 }
 
 /* Forms
    ========================================================================== */
+
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
+
 button,
 input,
 optgroup,
@@ -167,6 +189,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
+
 button,
 input {
   /* 1 */
@@ -177,6 +200,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
+
 button,
 select {
   /* 1 */
@@ -186,6 +210,7 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
+
 button,
 [type=button],
 [type=reset],
@@ -196,6 +221,7 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
+
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -207,6 +233,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
+
 button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
@@ -217,6 +244,7 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
+
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -227,6 +255,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
+
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -245,6 +274,7 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
+
 progress {
   vertical-align: baseline;
 }
@@ -252,6 +282,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
+
 textarea {
   overflow: auto;
 }
@@ -260,6 +291,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
+
 [type=checkbox],
 [type=radio] {
   box-sizing: border-box;
@@ -271,6 +303,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
+
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
   height: auto;
@@ -280,6 +313,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
+
 [type=search] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -290,6 +324,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
+
 [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -298,6 +333,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -307,9 +343,11 @@ textarea {
 
 /* Interactive
    ========================================================================== */
+
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
+
 details {
   display: block;
 }
@@ -317,15 +355,18 @@ details {
 /*
  * Add the correct display in all browsers.
  */
+
 summary {
   display: list-item;
 }
 
 /* Misc
    ========================================================================== */
+
 /**
  * Add the correct display in IE 10+.
  */
+
 template {
   display: none;
 }
@@ -333,6 +374,7 @@ template {
 /**
  * Add the correct display in IE 10.
  */
+
 [hidden] {
   display: none;
 }
@@ -344,6 +386,7 @@ template {
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: BerlingskeSerif;
   font-display: swap;
@@ -351,6 +394,7 @@ template {
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: SFProDisplay;
   font-display: swap;
@@ -358,6 +402,7 @@ template {
   font-weight: 300;
   font-style: normal;
 }
+
 :root {
   box-sizing: border-box;
 }
@@ -424,29 +469,9 @@ h1 {
 h2 {
   font-size: 45px;
 }
-@media screen and (max-width: 992px) {
-  h2 {
-    font-size: 32px;
-  }
-}
-@media screen and (max-width: 768px) {
-  h2 {
-    font-size: 26px;
-  }
-}
 
 h4 {
   font-size: 24px;
-}
-@media screen and (max-width: 992px) {
-  h4 {
-    font-size: 19px;
-  }
-}
-@media screen and (max-width: 768px) {
-  h4 {
-    font-size: 20px;
-  }
 }
 
 p {
@@ -470,8 +495,10 @@ img {
   flex: 1;
 }
 
+.no-webp .wrapper__content--direction {
+  background-image: url("../img/bg-direction.png"); }
+
 .wrapper__content--direction {
-  background-image: url("../img/bg-direction.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -482,16 +509,6 @@ img {
   height: 100%;
   max-width: 1280px;
 }
-@media screen and (max-width: 1320px) {
-  .container {
-    margin: 0 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    margin: 0 30px;
-  }
-}
 
 button {
   border: none;
@@ -499,6 +516,7 @@ button {
   padding: 0;
   cursor: pointer;
 }
+
 button:focus {
   outline: none;
 }
@@ -513,6 +531,7 @@ button:focus {
   letter-spacing: 1.92px;
   text-transform: uppercase;
 }
+
 .btn::before {
   content: "";
   position: absolute;
@@ -527,17 +546,13 @@ button:focus {
   background-color: #82584b;
   transform: translateX(-50%);
 }
+
 .btn:active {
   top: 4px;
 }
+
 .btn:active::before {
   top: 0px;
-}
-@media screen and (max-width: 768px) {
-  .btn {
-    padding: 23px 36px;
-    font-size: 12px;
-  }
 }
 
 .contacts {
@@ -567,6 +582,7 @@ button:focus {
 .control__phone-button.phone-button {
   background-color: #fff;
 }
+
 .control__phone-button.phone-button::before {
   background-image: url("../img/phone-green.svg");
 }
@@ -578,11 +594,6 @@ button:focus {
   height: 22px;
   font-size: 0;
   margin-left: 45px;
-}
-@media screen and (max-width: 768px) {
-  .control__toggle {
-    margin-left: 30px;
-  }
 }
 
 .control__toggle span,
@@ -632,21 +643,10 @@ button:focus {
 .direction {
   padding: 60px 0 70px;
 }
-@media screen and (max-width: 992px) {
-  .direction {
-    padding: 50px 0 15px;
-  }
-}
 
 .direction__title {
   text-align: center;
   margin-bottom: 70px;
-}
-@media screen and (max-width: 992px) {
-  .direction__title {
-    text-align: left;
-    margin-bottom: 35px;
-  }
 }
 
 .direction__list {
@@ -655,16 +655,6 @@ button:focus {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 -24px -50px;
-}
-@media screen and (max-width: 992px) {
-  .direction__list {
-    margin: 0 -11px -20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .direction__list {
-    margin: 0 0 -15px;
-  }
 }
 
 .direction__item {
@@ -676,20 +666,6 @@ button:focus {
   padding: 17px;
   margin: 0 24px 50px;
 }
-@media screen and (max-width: 992px) {
-  .direction__item {
-    width: 316px;
-    height: 369px;
-    padding: 14px;
-    margin: 0 11px 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .direction__item {
-    height: 330px;
-    margin: 0 0px 15px;
-  }
-}
 
 .direction__wrap {
   position: relative;
@@ -699,11 +675,7 @@ button:focus {
   border: 1px solid rgba(216, 228, 230, 0.54);
   height: 340px;
 }
-@media screen and (max-width: 768px) {
-  .direction__wrap {
-    height: 300px;
-  }
-}
+
 .direction__wrap::before {
   content: "";
   position: absolute;
@@ -721,11 +693,6 @@ button:focus {
 .direction__img {
   max-width: 100%;
 }
-@media screen and (max-width: 992px) {
-  .direction__img {
-    transform: scale(1.1);
-  }
-}
 
 .direction__content {
   position: absolute;
@@ -735,21 +702,10 @@ button:focus {
   left: 0;
   bottom: 33px;
 }
-@media screen and (max-width: 992px) {
-  .direction__content {
-    min-height: 48px;
-    bottom: 36px;
-  }
-}
 
 .footer {
   padding: 55px 0;
   background-color: #fff;
-}
-@media screen and (max-width: 992px) {
-  .footer {
-    padding: 30px 0;
-  }
 }
 
 .footer .container {
@@ -759,25 +715,8 @@ button:focus {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) {
-  .footer__logo {
-    order: 10;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__logo {
-    display: flex;
-    align-items: center;
-  }
-}
-
 .footer__logo-img {
   max-width: 143px;
-}
-@media screen and (max-width: 992px) {
-  .footer__logo-img {
-    max-width: 118px;
-  }
 }
 
 .footer__logo-desc {
@@ -785,182 +724,33 @@ button:focus {
   font-size: 12px;
   display: none;
 }
-@media screen and (max-width: 768px) {
-  .footer__logo-desc {
-    display: block;
-    margin-top: 12px;
-    margin-left: 55px;
-  }
-}
 
 .footer__menu.menu {
   display: flex;
-}
-@media screen and (max-width: 992px) {
-  .footer__menu.menu {
-    order: 40;
-    margin-top: 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__menu.menu {
-    order: 20;
-    margin-top: 25px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .footer__menu .menu__list {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__menu .menu__list {
-    font-size: 12px;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer__menu .menu__item {
-    margin-top: 25px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .footer__menu .menu__item + .menu__item {
-    margin-left: 27px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__menu .menu__item + .menu__item {
-    margin-left: 0;
-    margin-right: 27px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer__menu .menu__item:first-child {
-    margin-right: 27px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer__menu .menu__item:last-child {
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer__menu .menu__item:first-child {
-    margin-right: 27px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .footer__phones {
-    order: 20;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__phones {
-    width: 100%;
-    margin-top: 50px;
-    order: 30;
-  }
 }
 
 .footer__phones-desc {
   display: none;
 }
-@media screen and (max-width: 768px) {
-  .footer__phones-desc {
-    display: block;
-    font-size: 14px;
-    color: #acb2b2;
-    margin-bottom: 30px;
-  }
-}
 
 .footer__phones__contacts.contacts {
   flex-direction: row;
-}
-@media screen and (max-width: 768px) {
-  .footer__phones__contacts.contacts {
-    flex-wrap: wrap;
-  }
 }
 
 .footer__phones__contacts .contacts__item {
   align-items: flex-end;
 }
-@media screen and (max-width: 768px) {
-  .footer__phones__contacts .contacts__item {
-    margin-bottom: 25px;
-  }
-}
 
 .footer__phones__contacts .contacts__link {
   font-size: 14px;
-}
-@media screen and (max-width: 992px) {
-  .footer__phones__contacts .contacts__link {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__phones__contacts .contacts__link {
-    display: block;
-    font-size: 12px;
-  }
 }
 
 .footer__phones__contacts .contacts__item + .contacts__item {
   margin-top: 0;
 }
-@media screen and (max-width: 992px) {
-  .footer__phones__contacts .contacts__item + .contacts__item {
-    margin-left: 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__phones__contacts .contacts__item + .contacts__item {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer__phones__contacts .contacts__item:first-child {
-    margin-right: 40px;
-  }
-}
 
 .footer__phones__contacts .contacts__item:last-child {
   display: none;
-}
-@media screen and (max-width: 992px) {
-  .footer__phones__contacts .contacts__item:last-child {
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .footer__phones__contacts .contacts__phone {
-    font-size: 14px;
-    padding-left: 24px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .footer__phones__contacts .contacts__phone::after {
-    width: 13px;
-    height: 13px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__phones__contacts .contacts__phone::after {
-    width: 16px;
-    height: 16px;
-  }
 }
 
 .footer__additional {
@@ -968,21 +758,6 @@ button:focus {
   font-size: 13px;
   color: #cbcbcb;
   margin-top: 30px;
-}
-@media screen and (max-width: 992px) {
-  .footer__additional {
-    font-size: 14px;
-    margin-top: 40px;
-    order: 50;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__additional {
-    margin-top: 25px;
-    flex-direction: column;
-    font-size: 12px;
-    order: 40;
-  }
 }
 
 .footer__additional-link:first-child {
@@ -992,32 +767,9 @@ button:focus {
 .footer__additional-link + .footer__additional-link {
   margin-left: 45px;
 }
-@media screen and (max-width: 992px) {
-  .footer__additional-link + .footer__additional-link {
-    margin-left: 38px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__additional-link + .footer__additional-link {
-    margin-left: 0;
-    margin-top: 25px;
-  }
-}
 
 .footer__additional-link {
   color: inherit;
-}
-
-@media screen and (max-width: 992px) {
-  .footer__socials.socials {
-    order: 30;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__socials.socials {
-    display: none;
-    order: 50;
-  }
 }
 
 .footer__socials .socials__item + .socials__item {
@@ -1030,60 +782,10 @@ button:focus {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) {
-  .header__menu {
-    opacity: 0;
-    visibility: hidden;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 100%;
-    background-color: rgba(187, 187, 187, 0.4);
-    z-index: 20;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .header__menu.is-opened {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-@media screen and (max-width: 992px) {
-  .header__menu.is-opened .menu__dropdown {
-    right: 0;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .header__menu .menu__list {
-    flex-direction: column;
-    margin-bottom: 90px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .header__menu .menu__item + .menu__item {
-    margin-left: 0;
-    margin-top: 45px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header__menu .menu__item + .menu__item {
-    margin-top: 35px;
-  }
-}
-
 .header__service {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-}
-@media screen and (max-width: 992px) {
-  .header__service {
-    display: none;
-  }
 }
 
 .header__socials.socials {
@@ -1094,25 +796,10 @@ button:focus {
 .header__control {
   display: none;
 }
-@media screen and (max-width: 992px) {
-  .header__control {
-    display: flex;
-  }
-}
 
 .logo__link {
   display: block;
   max-width: 230px;
-}
-@media screen and (max-width: 1150px) {
-  .logo__link {
-    max-width: 150px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .logo__link {
-    max-width: 125px;
-  }
 }
 
 .menu {
@@ -1122,36 +809,11 @@ button:focus {
 .menu__dropdown {
   transition: all 1s ease;
 }
-@media screen and (max-width: 992px) {
-  .menu__dropdown {
-    position: fixed;
-    right: -150%;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    max-width: 344px;
-    padding: 30px 20px 155px;
-    overflow: auto;
-    background-color: #fcf8f5;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu__dropdown {
-    padding: 25px 20px 205px;
-    max-width: 278px;
-  }
-}
 
 .menu__header {
   align-items: center;
   justify-content: space-between;
   display: none;
-}
-@media screen and (max-width: 992px) {
-  .menu__header {
-    display: flex;
-    margin-bottom: 95px;
-  }
 }
 
 .menu__close {
@@ -1161,7 +823,9 @@ button:focus {
   height: 33px;
   background-color: #fff;
 }
-.menu__close::after, .menu__close::before {
+
+.menu__close::after,
+.menu__close::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -1171,9 +835,11 @@ button:focus {
   height: 11px;
   background-color: #7ba7af;
 }
+
 .menu__close::before {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+
 .menu__close::after {
   transform: translate(-50%, -50%) rotate(45deg);
 }
@@ -1198,29 +864,9 @@ button:focus {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 1150px) {
-  .menu__list {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .menu__list {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu__list {
-    font-size: 16px;
-  }
-}
 
 .menu__item + .menu__item {
   margin-left: 34px;
-}
-@media screen and (max-width: 1150px) {
-  .menu__item + .menu__item {
-    margin-left: 20px;
-  }
 }
 
 .menu__link {
@@ -1229,13 +875,6 @@ button:focus {
 
 .menu__contacts {
   display: none;
-}
-@media screen and (max-width: 992px) {
-  .menu__contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .phone-button {
@@ -1246,6 +885,7 @@ button:focus {
   background-color: #7ba7af;
   border-radius: 50%;
 }
+
 .phone-button::before {
   content: "";
   position: absolute;
@@ -1268,17 +908,7 @@ button:focus {
   color: #57595b;
   padding-left: 30px;
 }
-@media screen and (max-width: 1150px) {
-  .phone {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .phone {
-    font-size: 16px;
-    padding-left: 25px;
-  }
-}
+
 .phone::after {
   content: "";
   position: absolute;
@@ -1291,12 +921,6 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-@media screen and (max-width: 992px) {
-  .phone::after {
-    width: 16px;
-    height: 16px;
-  }
 }
 
 .socials {
@@ -1313,3 +937,364 @@ button:focus {
   display: block;
   max-width: 17px;
 }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .logo__link {
+    max-width: 150px;
+  }
+
+  .menu__list {
+    font-size: 14px;
+  }
+
+  .menu__item + .menu__item {
+    margin-left: 20px;
+  }
+
+  .phone {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 19px;
+  }
+
+  .direction {
+    padding: 50px 0 15px;
+  }
+
+  .direction__title {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+  .direction__list {
+    margin: 0 -11px -20px;
+  }
+
+  .direction__item {
+    width: 316px;
+    height: 369px;
+    padding: 14px;
+    margin: 0 11px 20px;
+  }
+
+  .direction__img {
+    transform: scale(1.1);
+  }
+
+  .direction__content {
+    min-height: 48px;
+    bottom: 36px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer__logo {
+    order: 10;
+  }
+
+  .footer__logo-img {
+    max-width: 118px;
+  }
+
+  .footer__menu.menu {
+    order: 40;
+    margin-top: 40px;
+  }
+
+  .footer__menu .menu__list {
+    font-size: 14px;
+  }
+
+  .footer__menu .menu__item + .menu__item {
+    margin-left: 27px;
+  }
+
+  .footer__phones {
+    order: 20;
+  }
+
+  .footer__phones__contacts .contacts__link {
+    display: none;
+  }
+
+  .footer__phones__contacts .contacts__item + .contacts__item {
+    margin-left: 40px;
+  }
+
+  .footer__phones__contacts .contacts__item:last-child {
+    display: flex;
+  }
+
+  .footer__phones__contacts .contacts__phone {
+    font-size: 14px;
+    padding-left: 24px;
+  }
+
+  .footer__phones__contacts .contacts__phone::after {
+    width: 13px;
+    height: 13px;
+  }
+
+  .footer__additional {
+    font-size: 14px;
+    margin-top: 40px;
+    order: 50;
+  }
+
+  .footer__additional-link + .footer__additional-link {
+    margin-left: 38px;
+  }
+
+  .footer__socials.socials {
+    order: 30;
+  }
+
+  .header__menu {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(187, 187, 187, 0.4);
+    z-index: 20;
+  }
+
+  .header__menu.is-opened {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header__menu.is-opened .menu__dropdown {
+    right: 0;
+  }
+
+  .header__menu .menu__list {
+    flex-direction: column;
+    margin-bottom: 90px;
+  }
+
+  .header__menu .menu__item + .menu__item {
+    margin-left: 0;
+    margin-top: 45px;
+  }
+
+  .header__service {
+    display: none;
+  }
+
+  .header__control {
+    display: flex;
+  }
+
+  .menu__dropdown {
+    position: fixed;
+    right: -150%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 344px;
+    padding: 30px 20px 155px;
+    overflow: auto;
+    background-color: #fcf8f5;
+  }
+
+  .menu__header {
+    display: flex;
+    margin-bottom: 95px;
+  }
+
+  .menu__list {
+    font-size: 18px;
+  }
+
+  .menu__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone::after {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .container {
+    margin: 0 30px;
+  }
+
+  .btn {
+    padding: 23px 36px;
+    font-size: 12px;
+  }
+
+  .control__toggle {
+    margin-left: 30px;
+  }
+
+  .direction {
+    padding: 50px 0 35px;
+  }
+
+  .direction__list {
+    margin: 0 0 -15px;
+  }
+
+  .direction__item {
+    height: 330px;
+    margin: 0 0px 15px;
+  }
+
+  .direction__wrap {
+    height: 300px;
+  }
+
+  .footer__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__logo-desc {
+    display: block;
+    margin-top: 12px;
+    margin-left: 55px;
+  }
+
+  .footer__menu.menu {
+    order: 20;
+    margin-top: 25px;
+  }
+
+  .footer__menu .menu__list {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  .footer__menu .menu__item {
+    margin-top: 25px;
+  }
+
+  .footer__menu .menu__item + .menu__item {
+    margin-left: 0;
+    margin-right: 27px;
+  }
+
+  .footer__menu .menu__item:first-child {
+    margin-right: 27px;
+  }
+
+  .footer__menu .menu__item:last-child {
+    margin-right: 0;
+  }
+
+  .footer__menu .menu__item:first-child {
+    margin-right: 27px;
+  }
+
+  .footer__phones {
+    width: 100%;
+    margin-top: 50px;
+    order: 30;
+  }
+
+  .footer__phones-desc {
+    display: block;
+    font-size: 14px;
+    color: #acb2b2;
+    margin-bottom: 30px;
+  }
+
+  .footer__phones__contacts.contacts {
+    flex-wrap: wrap;
+  }
+
+  .footer__phones__contacts .contacts__item {
+    margin-bottom: 25px;
+  }
+
+  .footer__phones__contacts .contacts__link {
+    display: block;
+    font-size: 12px;
+  }
+
+  .footer__phones__contacts .contacts__item + .contacts__item {
+    margin-left: 0;
+  }
+
+  .footer__phones__contacts .contacts__item:first-child {
+    margin-right: 40px;
+  }
+
+  .footer__phones__contacts .contacts__phone::after {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer__additional {
+    margin-top: 25px;
+    flex-direction: column;
+    font-size: 12px;
+    order: 40;
+  }
+
+  .footer__additional-link + .footer__additional-link {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .footer__socials.socials {
+    display: none;
+    order: 50;
+  }
+
+  .header__menu .menu__item + .menu__item {
+    margin-top: 35px;
+  }
+
+  .logo__link {
+    max-width: 125px;
+  }
+
+  .menu__dropdown {
+    padding: 25px 20px 205px;
+    max-width: 278px;
+  }
+
+  .menu__list {
+    font-size: 16px;
+  }
+
+  .phone {
+    font-size: 16px;
+    padding-left: 25px;
+  }
+}
+
+.webp .wrapper__content--direction { background-image: url(../img/bg-direction.webp); }
