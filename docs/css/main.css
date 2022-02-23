@@ -759,6 +759,18 @@ button:focus {
 .direction__img {
   max-width: 100%;
 }
+@media screen and (max-width: 992px) {
+  .direction__img {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .direction__img-elem {
+    object-fit: contain;
+  }
+}
+
 .direction__content {
   position: absolute;
   text-align: center;
