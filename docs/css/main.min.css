@@ -769,6 +769,13 @@ button:focus {
     row-gap: 30px;
   }
 }
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: initial;
+    padding: 35px 20px 55px;
+  }
+}
+
 .card__img-wrap {
   grid-area: a;
 }
@@ -784,6 +791,12 @@ button:focus {
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__img {
+    width: 219px;
+    height: 213px;
   }
 }
 
@@ -805,6 +818,11 @@ button:focus {
     padding-bottom: 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  .card__detail {
+    padding-bottom: 15px;
+  }
+}
 
 .card__fullname {
   margin-bottom: 35px;
@@ -816,6 +834,11 @@ button:focus {
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .card__fullname {
+    font-size: 16px;
+  }
+}
 
 .card__area {
   margin-bottom: 30px;
@@ -823,6 +846,12 @@ button:focus {
 @media screen and (max-width: 992px) {
   .card__area {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card__area .area__title {
+    display: none;
   }
 }
 
@@ -845,6 +874,13 @@ button:focus {
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .card__desc {
+    font-size: 12px;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+}
 
 .card__info {
   display: flex;
@@ -854,6 +890,11 @@ button:focus {
 @media screen and (max-width: 992px) {
   .card__info {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__info {
+    font-size: 13px;
   }
 }
 
@@ -889,6 +930,12 @@ button:focus {
 .card__info-item + .card__info-item {
   margin-top: 28px;
 }
+@media screen and (max-width: 768px) {
+  .card__info-item + .card__info-item {
+    margin-top: 25px;
+  }
+}
+
 .card__training {
   grid-area: c;
 }
@@ -914,6 +961,11 @@ button:focus {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  .card__training-list {
+    margin-bottom: 17px;
+  }
+}
 .card__training-list:last-child {
   margin-bottom: 0;
 }
@@ -927,6 +979,11 @@ button:focus {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 768px) {
+  .card__training-item {
+    font-size: 13px;
+  }
+}
 
 .card__training-item + .card__training-item {
   margin-top: 30px;
@@ -934,6 +991,11 @@ button:focus {
 @media screen and (max-width: 992px) {
   .card__training-item + .card__training-item {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__training-item + .card__training-item {
+    margin-top: 17px;
   }
 }
 
@@ -1058,6 +1120,11 @@ button:focus {
   .details-link {
     font-size: 14px;
     padding-right: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .details-link {
+    font-size: 13px;
   }
 }
 .details-link::before {
@@ -1303,6 +1370,12 @@ button:focus {
     padding: 50px 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .doctor {
+    padding: 45px 0;
+  }
+}
+
 .doctor__link {
   margin-bottom: -60px;
 }
@@ -1322,6 +1395,13 @@ button:focus {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 768px) {
+  .doctor__title {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
 .doctors {
   padding: 75px 0 122px;
 }
