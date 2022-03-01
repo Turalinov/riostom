@@ -826,8 +826,10 @@ button:focus {
   }
 }
 
-.card__area .area__list {
-  justify-content: center;
+@media screen and (max-width: 992px) {
+  .card__area .area__list {
+    justify-content: center;
+  }
 }
 
 .card__desc {
