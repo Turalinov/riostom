@@ -122,97 +122,209 @@
         <main>
           <section class="doctor" id="doctor">
   <div class="container">
-    <a href="#" class="doctor__link  back-link">Назад</a>
+    <a href="#" onclick="javascript:history.back(); return false;"  class="doctor__link  back-link">Назад</a>
     <h2 class="doctor__title">Главный врач</h2>
 
     <div class="doctor__card card">
 
-      <div class="card__top">
 
-        <div class="card__left">
-          <div class="card__img">
-            <img src="img/doctors1.png" alt="Трофимов Артем Эдуардович" class="card__img-elem">
-          </div>
+      <div class="card__img-wrap">
+        <div class="card__img">
+          <img src="img/doctors1.png" alt="Трофимов Артем Эдуардович" class="card__img-elem">
         </div>
+      </div>
 
-        <div class="card__right">
-          <div class="card__fullname">Трофимов Артем Эдуардович</div>
-          <div class="card__area area">
-            <div class="area__title">
-              Направления лечения:
-            </div>
-            <ul class="area__list">
-              <li class="area__item">
-                Хирургия
-              </li>
-              <li class="area__item">
-                Ортопедия
-              </li>
-              <li class="area__item">
-                Детская стоматология
-              </li>
-            </ul>
-          </div>
-          <div class="card__desc">
-            1-й Заместитель генерального директора по лечебной
-            работе (Главный врач). Врач-стоматолог высшей категории.
-            Кандидат медицинских наук.
-          </div>
-          <ul class="card__info">
-            <li class="card__info-item">
-              Окончил Московский Государственный Медико-стоматологический
-              университет с красным дипломом в 2005 году.
-            </li>
-            <li class="card__info-item">
-              В 2005-2011 годах обучался на кафедре детской хирургической
-              стоматологии и челюстно-лицевой хирургии при МГМСУ.
-            </li>
-            <li class="card__info-item">
-              Защитил диссертационное исследование. Попутно работал
-              в Детской городской клинической больнице Св.Владимира
-              врачом-стоматологом детским и в детской городской
-              поликлинике №16 врачом-стоматологом хирургом детским.
-            </li>
-            <li class="card__info-item">
-              В последние годы посвятил себя ортопедической стоматологии,
-              окончил большое количество курсов у отечественных и иностранных
-              лекторов, постоянно посещает стоматологические симпозиумы,
-              курсы, лекции, мастер-классы.
-            </li>
-          </ul>
-
+      <div class="card__area area">
+        <div class="area__title">
+          Направления лечения:
         </div>
-
+        <ul class="area__list">
+          <li class="area__item">
+            Хирургия
+          </li>
+          <li class="area__item">
+            Ортопедия
+          </li>
+          <li class="area__item">
+            Детская стоматология
+          </li>
+        </ul>
       </div>
 
 
-      <div class="card__bottom">
-        <div class="card__training">
-          <div class="card__training-title">Повышение квалификации:</div>
-          <ul class="card__training-list">
-            <li class="card__training-item">
-              <span class="card__training-year">2016</span>
-              <span class="card__training-detail">курс повышения квалификации в Цюрихе.....</span>
-            </li>
-            <li class="card__training-item">
-              <span class="card__training-year">2019</span>
-              <span class="card__training-detail">курс повышения квалификации в Цюрихе.....</span>
-            </li>
-          </ul>
-          <a href="#" class="details-link">Подробнее</a>
+      <div class="card__detail">
+        <h3 class="card__fullname">Трофимов Артем Эдуардович</h3>
+        <div class="card__desc">
+          1-й Заместитель генерального директора по лечебной
+          работе (Главный врач). Врач-стоматолог высшей категории.
+          Кандидат медицинских наук.
         </div>
+        <ul class="card__info">
+          <li class="card__info-item">
+            Окончил Московский Государственный Медико-стоматологический
+            университет с красным дипломом в 2005 году.
+          </li>
+          <li class="card__info-item">
+            В 2005-2011 годах обучался на кафедре детской хирургической
+            стоматологии и челюстно-лицевой хирургии при МГМСУ.
+          </li>
+          <li class="card__info-item">
+            Защитил диссертационное исследование. Попутно работал
+            в Детской городской клинической больнице Св.Владимира
+            врачом-стоматологом детским и в детской городской
+            поликлинике №16 врачом-стоматологом хирургом детским.
+          </li>
+          <li class="card__info-item">
+            В последние годы посвятил себя ортопедической стоматологии,
+            окончил большое количество курсов у отечественных и иностранных
+            лекторов, постоянно посещает стоматологические симпозиумы,
+            курсы, лекции, мастер-классы.
+          </li>
+        </ul>
+      </div>
 
+      <div class="card__training">
+        <div class="card__training-title">Повышение квалификации:</div>
+        <ul class="card__training-list">
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+        </ul>
+        <ul class="card__training-list details-more">
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+          <li class="card__training-item">
+            <span>2019</span>курс повышения квалификации в Цюрихе.....
+          </li>
+        </ul>
+        <a href="#" class="card__details-link details-link">Подробнее</a>
+      </div>
+
+
+      <div class="card__diplomas-wrap">
         <div class="card__diplomas diplomas">
-          <div class="diplomas__title">
+          <h4 class="diplomas__title">
             Дипломы
+          </h4>
+
+          <!-- Главный контейнер слайдера -->
+          <div class="diplomas__slider slider">
+            <!-- Обязательная оболочка -->
+            <ul class="diplomas__list swiper-wrapper">
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="diplomas__item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="diplom__img">
+                  <img src="img/diplom.png" alt="diplomas" class="diplom__img-elem">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="diplomas__item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="diplom__img">
+                  <img src="img/diplom.png" alt="diplomas" class="diplom__img-elem">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="diplomas__item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="diplom__img">
+                  <img src="img/diplom.png" alt="diplomas" class="diplom__img-elem">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="diplomas__item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="diplom__img">
+                  <img src="img/diplom.png" alt="diplomas" class="diplom__img-elem">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="diplomas__item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="diplom__img">
+                  <img src="img/diplom.png" alt="diplomas" class="diplom__img-elem">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="diplomas__item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="diplom__img">
+                  <img src="img/diplom.png" alt="diplomas" class="diplom__img-elem">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="diplomas__item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="diplom__img">
+                  <img src="img/diplom.png" alt="diplomas" class="diplom__img-elem">
+                </div>
+
+              </li>
+              <!-- Слайды (c хэшом навигации)-->
+              <li class="diplomas__item swiper-slide">
+                <!-- Контент внутри слайдера -->
+                <div class="diplom__img">
+                  <img src="img/diplom.png" alt="diplomas" class="diplom__img-elem">
+                </div>
+
+              </li>
+            </ul>
+
+
+
+            <!-- Добавляем если нам нужны стрелки управления (параметр navigation)-->
+            <div class="diplomas__button-prev slider-button-prev"></div>
+            <div class="diplomas__button-next slider-button-next"></div>
+
           </div>
-          <ul class="diplomas__list">
-            <li class="diplomas__item">diplom</li>
-            <li class="diplomas__item">diplom</li>
-            <li class="diplomas__item">diplom</li>
-            <li class="diplomas__item">diplom</li>
-            <li class="diplomas__item">diplom</li>
-          </ul>
+
         </div>
       </div>
     </div>
