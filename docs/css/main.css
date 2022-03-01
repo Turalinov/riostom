@@ -528,7 +528,7 @@ img {
   font-family: "SFProDisplay", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 992px) {
   .area__title {
@@ -542,7 +542,7 @@ img {
   flex-wrap: wrap;
   color: #9da6a8;
   font-size: 18px;
-  margin-top: -25px;
+  margin-top: -20px;
 }
 @media screen and (max-width: 992px) {
   .area__list {
@@ -562,7 +562,7 @@ img {
   position: relative;
   padding-left: 26px;
   margin-right: 26px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 992px) {
   .area__item {
@@ -755,24 +755,20 @@ button:focus {
   border-radius: 10px;
   background-color: #fff;
   display: grid;
-  grid-template-areas: "a a b b b" "c c b b b" "d d e e e";
+  grid-template-areas: "a a b b b" "a a b b b" "c c d d d";
   column-gap: 60px;
   row-gap: 65px;
 }
 @media screen and (max-width: 992px) {
   .card {
-    column-gap: 30px;
-    row-gap: 10px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .card {
-    grid-template-areas: "a" "b" "c" "d" "e";
+    grid-template-areas: "a" "b" "d" "c";
+    max-width: 668px;
+    padding: 25px;
+    margin: 0 auto;
     column-gap: initial;
-    row-gap: initial;
+    row-gap: 30px;
   }
 }
-
 .card__img-wrap {
   grid-area: a;
 }
@@ -780,20 +776,72 @@ button:focus {
 .card__img {
   max-width: 453px;
 }
+@media screen and (max-width: 992px) {
+  .card__img {
+    max-width: initial;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card__img-elem {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
 
 .card__detail {
   grid-area: b;
   padding-bottom: 40px;
   border-bottom: 1px solid #d8d9dd;
 }
+@media screen and (max-width: 992px) {
+  .card__detail {
+    padding-bottom: 20px;
+  }
+}
 
 .card__fullname {
   margin-bottom: 35px;
 }
+@media screen and (max-width: 992px) {
+  .card__fullname {
+    font-size: 19px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.card__area {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+  .card__area {
+    text-align: center;
+  }
+}
+
+.card__area .area__list {
+  justify-content: center;
+}
 
 .card__desc {
   max-width: 430px;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
+}
+@media screen and (max-width: 992px) {
+  .card__desc {
+    font-size: 14px;
+    max-width: initial;
+    padding: 0 80px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .card__info {
@@ -801,10 +849,20 @@ button:focus {
   flex-direction: column;
   font-size: 18px;
 }
+@media screen and (max-width: 992px) {
+  .card__info {
+    font-size: 14px;
+  }
+}
 
 .card__info-item {
   padding-left: 26px;
   position: relative;
+}
+@media screen and (max-width: 992px) {
+  .card__info-item {
+    padding-left: 22px;
+  }
 }
 .card__info-item::after {
   content: "";
@@ -816,18 +874,21 @@ button:focus {
   background-image: url("../img/check.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
+@media screen and (max-width: 992px) {
+  .card__info-item::after {
+    top: 0;
+    width: 11px;
+    height: 19px;
+  }
+}
+
 .card__info-item + .card__info-item {
   margin-top: 28px;
 }
-
-.card__area {
-  grid-area: c;
-}
-
 .card__training {
-  grid-area: d;
+  grid-area: c;
 }
 
 .card__training-title {
@@ -836,20 +897,42 @@ button:focus {
   font-size: 20px;
   margin-bottom: 35px;
 }
+@media screen and (max-width: 992px) {
+  .card__training-title {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
 
 .card__training-list {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+  .card__training-list {
+    margin-bottom: 20px;
+  }
 }
 .card__training-list:last-child {
   margin-bottom: 0;
 }
 
 .card__training-item {
+  display: flex;
   font-size: 18px;
+}
+@media screen and (max-width: 992px) {
+  .card__training-item {
+    font-size: 14px;
+  }
 }
 
 .card__training-item + .card__training-item {
   margin-top: 30px;
+}
+@media screen and (max-width: 992px) {
+  .card__training-item + .card__training-item {
+    margin-top: 20px;
+  }
 }
 
 .card__training-item span {
@@ -858,9 +941,14 @@ button:focus {
   font-size: 20px;
   margin-right: 17px;
 }
+@media screen and (max-width: 992px) {
+  .card__training-item span {
+    font-size: 16px;
+  }
+}
 
 .card__diplomas-wrap {
-  grid-area: e;
+  grid-area: d;
   overflow: hidden;
 }
 
@@ -964,6 +1052,12 @@ button:focus {
   padding-right: 24px;
   position: relative;
 }
+@media screen and (max-width: 992px) {
+  .details-link {
+    font-size: 14px;
+    padding-right: 12px;
+  }
+}
 .details-link::before {
   content: "";
   position: absolute;
@@ -977,6 +1071,13 @@ button:focus {
   background-size: cover;
   background-position: center;
   transition: transform 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .details-link::before {
+    top: 55%;
+    width: 4px;
+    height: 7px;
+  }
 }
 
 .details-link.is-active::before {
@@ -1195,6 +1296,11 @@ button:focus {
 .doctor {
   padding: 75px 0 122px;
 }
+@media screen and (max-width: 992px) {
+  .doctor {
+    padding: 50px 0;
+  }
+}
 .doctor__link {
   margin-bottom: -60px;
 }
@@ -1207,6 +1313,12 @@ button:focus {
 .doctor__title {
   text-align: center;
   margin-bottom: 67px;
+}
+@media screen and (max-width: 992px) {
+  .doctor__title {
+    text-align: left;
+    margin-bottom: 30px;
+  }
 }
 .doctors {
   padding: 75px 0 122px;
