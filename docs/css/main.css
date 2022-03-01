@@ -864,10 +864,6 @@ button:focus {
   overflow: hidden;
 }
 
-.card__diplomas.diplomas {
-  border: 1px solid red;
-}
-
 .contacts {
   display: flex;
   flex-direction: column;
@@ -1005,20 +1001,43 @@ button:focus {
   margin-bottom: 30px;
 }
 
-.diplomas__slider {
+.diplomas__slider-wrap {
   position: relative;
+}
+
+.diplomas__slider {
   overflow: hidden;
+  max-width: 542px;
+  margin: 0 auto;
 }
 
 .diplomas__item {
   width: 127px;
+  height: 161px;
+}
+
+.diplomas__link {
+  display: block;
+  height: 100%;
 }
 
 .diplom__img {
-  width: 127px;
-  height: 161px;
+  width: 100%;
+  height: 100%;
   border-radius: 3px;
   overflow: hidden;
+  text-align: center;
+}
+
+.diplom__img-elem {
+  object-fit: cover;
+  display: inline-block;
+}
+
+.diplomas__button-prev.slider-button-prev,
+.diplomas__button-next.slider-button-next {
+  width: 45px;
+  height: 45px;
 }
 
 .direction {
