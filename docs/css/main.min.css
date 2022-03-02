@@ -1411,6 +1411,14 @@ button:focus {
   }
 }
 
+.doctor__slider .doctors__item {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.doctor__slider .doctors__item:hover {
+  opacity: 1;
+}
+
 .doctors {
   padding: 75px 0 122px;
 }
@@ -1554,6 +1562,7 @@ button:focus {
 }
 
 .doctors__item-wrap {
+  display: block;
   height: 100%;
   border-radius: 10px;
   border: 1px solid rgba(216, 228, 230, 0.54);
