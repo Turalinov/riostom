@@ -1402,6 +1402,15 @@ button:focus {
   }
 }
 
+.doctor__slider {
+  margin-top: 40px;
+}
+@media screen and (max-width: 992px) {
+  .doctor__slider {
+    display: none;
+  }
+}
+
 .doctors {
   padding: 75px 0 122px;
 }
