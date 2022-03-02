@@ -1181,6 +1181,16 @@ button:focus {
   margin: 0 auto;
 }
 
+.diplomas__slider .swiper-slide {
+  transition: transform 0.3s;
+}
+
+@media screen and (max-width: 992px) {
+  .diplomas__slider .swiper-slide:not(.swiper-slide-active) {
+    transform: scale(0.5);
+  }
+}
+
 .diplomas__item {
   width: 127px;
   height: 161px;
