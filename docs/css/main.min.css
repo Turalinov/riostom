@@ -1905,6 +1905,28 @@ button:focus {
   margin-left: 18px;
 }
 
+.forward-link {
+  display: block;
+  max-width: max-content;
+  color: #8a8e8f;
+  text-decoration: underline;
+  padding-right: 24px;
+  position: relative;
+}
+.forward-link::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 14px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  background-image: url("../img/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -2412,6 +2434,79 @@ button:focus {
 
 .ticket__details-link {
   margin: 10px auto 0;
+}
+
+.work {
+  padding: 60px 0 70px;
+}
+@media screen and (max-width: 992px) {
+  .work {
+    padding: 50px 0 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work {
+    padding: 50px 0 35px;
+  }
+}
+
+.work__wrap {
+  box-shadow: 0 9px 41px 13px rgba(217, 220, 221, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 60px 100px;
+}
+
+.work__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 47px;
+}
+
+.work__changes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work__change {
+  width: 48%;
+}
+
+.work__change-doctor {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 37px;
+}
+
+.work__change-doctor-img {
+  max-width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(171, 170, 170, 0.2);
+  margin-right: 25px;
+}
+
+.work__change-doctor-info {
+  font-size: 18px;
+  color: #aaa7a4;
+}
+
+.work__change-doctor-info span {
+  color: #8f8c8a;
+}
+
+.work__change-img {
+  margin-bottom: 50px;
+}
+
+.work__change-title {
+  margin-bottom: 18px;
+}
+
+.work__change-desc {
+  font-size: 18px;
 }
 
 .works {
