@@ -898,16 +898,19 @@ button:focus {
   }
 }
 
-.card__info-item {
+.card__info-item,
+.process__content ul li {
   padding-left: 26px;
   position: relative;
 }
 @media screen and (max-width: 992px) {
-  .card__info-item {
+  .card__info-item,
+.process__content ul li {
     padding-left: 22px;
   }
 }
-.card__info-item::after {
+.card__info-item::after,
+.process__content ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -920,7 +923,8 @@ button:focus {
   background-size: contain;
 }
 @media screen and (max-width: 992px) {
-  .card__info-item::after {
+  .card__info-item::after,
+.process__content ul li::after {
     top: 0;
     width: 11px;
     height: 19px;
@@ -2244,6 +2248,50 @@ button:focus {
   }
 }
 
+.process__title {
+  margin-bottom: 61px;
+}
+
+.process__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.process__item + .process__item {
+  margin-top: 135px;
+}
+
+.process__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.process__item:last-child {
+  flex-direction: row-reverse;
+}
+
+.process__img,
+.process__info {
+  width: 48%;
+}
+
+.process__subtitle {
+  margin-bottom: 30px;
+}
+
+.process__content {
+  font-size: 18px;
+}
+
+.process__content p + p {
+  margin-top: 35px;
+}
+
+.process__content ul li {
+  margin: 30px 0px;
+}
+
 .slider-button-prev,
 .slider-button-next {
   position: absolute;
@@ -2467,6 +2515,7 @@ button:focus {
 .work__changes {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 .work__change {
