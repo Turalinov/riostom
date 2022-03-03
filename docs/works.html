@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" >
+  <title>Примеры работ</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__content wrapper__content--direction">
+        <header class="header">
+  <div class="container">
+
+    <div class="header__logo logo">
+      <a href="/" class="logo__link">
+        <img src="img/logo.png" alt="logo" class="logo__img" width="230" height="139">
+      </a>
+    </div>
+
+    <nav class="header__menu menu">
+      <div class="menu__dropdown">
+        <!-- menu__header появляется когда menu раскрыто в mobile т.е opened -->
+        <div class="menu__header">
+          <button type="button" class="menu__close"></button>
+          <div class="menu__content">
+            <div class="menu__content-img">
+              <img src="img/menu__logo.svg" alt="logo" width="78" height="21" class="menu__content-img-elem">
+            </div>
+            <div class="menu__content-desc">
+              Современная Семейная Стоматология
+            </div>
+          </div>
+          <a class="menu__content-phone-button phone-button" href="tel:+74956528305"></a>
+        </div>
+        <!-- menu__header end -->
+
+        <!-- menu__list start -->
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="direction.html" class="menu__link">Направления лечения</a>
+          </li>
+          <li class="menu__item">
+            <a href="works.html" class="menu__link">Примеры работ</a>
+          </li>
+          <li class="menu__item">
+            <a href="doctors.html" class="menu__link">Врачи</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Цены</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+        <!-- menu__list end -->
+
+        <!-- menu__contacts появляется когда menu раскрыто в mobile т.е opened -->
+        <ul class="menu__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:+74956528305" class="contacts__phone phone">8 (495) 652-83-05</a>
+            <a href="#" class="contacts__link">Заказать обратный звонок</a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+79250858985" class="contacts__phone phone">8 (925) 085-89-85</a>
+            <a href="#" class="contacts__link">Заказать обратный звонок</a>
+          </li>
+        </ul>
+        <!-- menu__contacts end -->
+      </div>
+    </nav>
+
+    <div class="header__service">
+      <!-- contacts start-->
+      <ul class="header__contacts contacts">
+        <li class="contacts__item">
+          <a href="tel:+74956528305" class="contacts__phone phone">8 (495) 652-83-05</a>
+        </li>
+      </ul>
+      <!-- contacts end -->
+
+      <!-- socials start -->
+      <ul class="header__socials socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <img src="img/telegram.svg" alt="Telegram" class="socials__img">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <img src="img/vk.svg" alt="VK" class="socials__img">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <img src="img/instagram.svg" alt="Instagram" class="socials__img">
+          </a>
+        </li>
+      </ul>
+      <!-- socials end -->
+    </div>
+
+    <!-- menu__control start -->
+    <div class="header__control control">
+      <a class="control__phone-button phone-button" href="tel:+74956528305"></a>
+      <button type="button" class="control__toggle">
+        открыть/закрыть меню
+        <span></span>
+      </button>
+    </div>
+    <!-- menu__control end -->
+
+  </div>
+</header>
+
+        <main>
+          <section class="works" id="works">
+  <div class="container">
+    <h2 class="works__title">
+      Примеры работ
+    </h2>
+
+    <div class="works__slider-wrap">
+      <!-- Главный контейнер слайдера -->
+      <div class="works__slider slider">
+        <!-- Обязательная оболочка -->
+        <ul class="works__list swiper-wrapper">
+          <!-- Слайды (c хэшом навигации)-->
+          <li class="works__item is-active swiper-slide" data-attr="1">
+            <span>Виниры</span>
+          </li>
+          <li class="works__item swiper-slide" data-attr="2">
+            <span>Имплантация</span>
+          </li>
+          <li class="works__item swiper-slide" data-attr="3">
+            <span>Коронки</span>
+          </li>
+          <li class="works__item swiper-slide" data-attr="4">
+            <span>Брекеты</span>
+          </li>
+          <li class="works__item swiper-slide" data-attr="5">
+            <span>Лечение под микроскопом</span>
+          </li>
+          <li class="works__item swiper-slide" data-attr="6">
+            <span>Виниры</span>
+          </li>
+          <li class="works__item swiper-slide" data-attr="7">
+            <span>Имплантация</span>
+          </li>
+          <li class="works__item swiper-slide" data-attr="8">
+            <span>Коронки</span>
+          </li>
+        </ul>
+
+
+        <!-- Добавляем если нам нужны стрелки управления (параметр navigation)-->
+        <div class="works__button-prev"></div>
+        <div class="works__button-next"></div>
+
+      </div>
+
+    </div>
+
+    <ul class="works__content-list">
+      <li class="works__content-item is-active" data-attr="1">
+        <div class="works__ticket ticket">
+          <ul class="ticket__list">
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item delimiter">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="works__more more">
+          <a href="#" class="more__link">
+            <span class="more__text">Показать все</span>
+            <div class="more__img">
+              <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="works__content-item" data-attr="2">
+        <div class="works__ticket ticket">
+          <ul class="ticket__list">
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item delimiter">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                  <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="works__more more">
+          <a href="#" class="more__link">
+            <span class="more__text">Показать все</span>
+            <div class="more__img">
+              <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="works__content-item" data-attr="3">
+        <div class="works__ticket ticket">
+          <ul class="ticket__list">
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item delimiter">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="works__more more">
+          <a href="#" class="more__link">
+            <span class="more__text">Показать все</span>
+            <div class="more__img">
+              <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
+            </div>
+          </a>
+        </div></li>
+      <li class="works__content-item" data-attr="4">
+        <div class="works__ticket ticket">
+          <ul class="ticket__list">
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item delimiter">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="works__more more">
+          <a href="#" class="more__link">
+            <span class="more__text">Показать все</span>
+            <div class="more__img">
+              <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
+            </div>
+          </a>
+        </div></li>
+      <li class="works__content-item" data-attr="5">
+        <div class="works__ticket ticket">
+          <ul class="ticket__list">
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item delimiter">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="works__more more">
+          <a href="#" class="more__link">
+            <span class="more__text">Показать все</span>
+            <div class="more__img">
+              <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="works__content-item" data-attr="6">
+        <div class="works__ticket ticket">
+          <ul class="ticket__list">
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item delimiter">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="works__more more">
+          <a href="#" class="more__link">
+            <span class="more__text">Показать все</span>
+            <div class="more__img">
+              <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
+            </div>
+          </a>
+        </div></li>
+      <li class="works__content-item" data-attr="7">
+        <div class="works__ticket ticket">
+          <ul class="ticket__list">
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item delimiter">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="works__more more">
+          <a href="#" class="more__link">
+            <span class="more__text">Показать все</span>
+            <div class="more__img">
+              <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
+            </div>
+          </a>
+        </div></li>
+      <li class="works__content-item" data-attr="8">
+        <div class="works__ticket ticket">
+          <ul class="ticket__list">
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item delimiter">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+            <li class="ticket__item">
+              <div class="ticket__wrap">
+                <div class="ticket__img">
+                  <img src="img/vinir.png" alt="Установка винира Emax 3" class="ticket__img-elem">
+                </div>
+                <div class="ticket__content">
+                  <h4 class="ticket__subtitle">
+                    Установка винира<br>
+                    Emax 3
+                  </h4>
+
+                   <a href="work.html" class="ticket__details-link details-link">Подробнее</a>
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="works__more more">
+          <a href="#" class="more__link">
+            <span class="more__text">Показать все</span>
+            <div class="more__img">
+              <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
+            </div>
+          </a>
+        </div></li>
+    </ul>
+
+
+
+
+
+  </div>
+</section>
+
+        </main>
+      </div>
+
+      <footer class="footer">
+  <div class="container">
+
+    <div class="footer__logo">
+      <div class="footer__logo-img">
+        <img src="img/menu__logo.svg" alt="logo" class="footer__logo-img-elem" width="143" height="38">
+      </div>
+      <div class="footer__logo-desc">
+        Современная Семейная<br>Стоматология
+      </div>
+    </div>
+
+    <nav class="footer__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Направления лечения</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Примеры работ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Врачи</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Цены</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer__phones">
+      <div class="footer__phones-desc">Запишитесь к врачу на консультацию:</div>
+
+      <ul class="footer__phones__contacts contacts">
+        <li class="contacts__item">
+          <a href="tel:+74956528305" class="contacts__phone phone">8 (495) 652-83-05</a>
+          <a href="#" class="contacts__link">Заказать обратный звонок</a>
+        </li>
+        <li class="contacts__item">
+          <a href="tel:+79250858985" class="contacts__phone phone">8 (925) 085-89-85</a>
+          <a href="#" class="contacts__link">Заказать обратный звонок</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__additional">
+      <a href="#" class="footer__additional-link">Политика конденфициальности</a>
+      <a href="#" class="footer__additional-link">Дизайн - Чувилина Дарья</a>
+    </div>
+
+
+    <ul class="footer__socials socials">
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="img/telegram.svg" alt="Telegram" class="socials__img">
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="img/vk.svg" alt="VK" class="socials__img">
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link">
+          <img src="img/instagram.svg" alt="Instagram" class="socials__img">
+        </a>
+      </li>
+    </ul>
+
+
+
+  </div>
+</footer>
+</div>
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+
+  </body>
+</html>
