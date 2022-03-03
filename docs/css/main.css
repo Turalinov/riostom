@@ -955,6 +955,9 @@ button:focus {
 
 .card__training-list {
   margin-bottom: 30px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  will-change: max-height;
 }
 @media screen and (max-width: 992px) {
   .card__training-list {
@@ -1153,19 +1156,6 @@ button:focus {
   transform: translateY(-50%) rotate(90deg);
 }
 
-.details-more {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  will-change: max-height;
-  transition: all 0.3s ease-out;
-}
-
-.details-more.is-opened {
-  overflow: initial;
-  opacity: 1;
-}
-
 .diplomas__title {
   text-align: center;
   margin-bottom: 30px;
@@ -1245,6 +1235,17 @@ button:focus {
   }
 }
 
+.direction__list-wrapper {
+  overflow: hidden;
+  will-change: max-height;
+  transition: max-height 0.5s;
+}
+@media screen and (max-width: 992px) {
+  .direction__list-wrapper {
+    max-height: initial !important;
+  }
+}
+
 .direction__list {
   display: flex;
   align-items: center;
@@ -1259,29 +1260,7 @@ button:focus {
 }
 @media screen and (max-width: 768px) {
   .direction__list {
-    margin: 0 0 0;
-  }
-}
-
-.direction__list:last-child {
-  margin: 0 -24px -50px;
-}
-@media screen and (max-width: 992px) {
-  .direction__list:last-child {
-    margin: 0 -11px -20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .direction__list:last-child {
-    margin: 0 0 -15px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .direction__list.more-content {
-    overflow: initial;
-    opacity: 1;
-    max-height: 100% !important;
+    margin: 0;
   }
 }
 
@@ -1468,8 +1447,9 @@ button:focus {
 }
 @media screen and (max-width: 992px) {
   .doctors__slider {
-    overflow: initial;
     height: initial;
+    will-change: max-height;
+    transition: max-height 0.5s;
   }
 }
 
@@ -1515,7 +1495,7 @@ button:focus {
 }
 @media screen and (max-width: 768px) {
   .doctors__list {
-    padding-bottom: 30px;
+    padding-bottom: 70px;
   }
 }
 
@@ -2283,19 +2263,6 @@ button:focus {
 
 .more__img.is-rotate {
   transform: rotate(180deg);
-}
-
-.more-content {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  will-change: max-height;
-  transition: all 0.3s ease-out;
-}
-
-.more-content.is-opened {
-  overflow: initial;
-  opacity: 1;
 }
 
 .phone-button {

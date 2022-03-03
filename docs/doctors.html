@@ -126,7 +126,7 @@
     <h2 class="doctors__title">Врачи</h2>
 
     <!-- Главный контейнер слайдера -->
-    <div class="doctors__slider slider">
+    <div class="doctors__slider is-column slider">
       <!-- Обязательная оболочка -->
       <ul class="doctors__list swiper-wrapper">
         <!-- Слайды (c хэшом навигации)-->
@@ -337,7 +337,7 @@
           </div>
 
         </li>
-        <li class="doctors__item swiper-slide">
+        <li class="doctors__item swiper-slide delimiter">
           <div class="doctors__item-wrap">
 
             <div class="doctors__img">
@@ -500,22 +500,18 @@
 
         </li>
       </ul>
-
-      <div class="doctors__more more">
-        <a href="#" class="more__link">
-          <span class="more__text">Показать все</span>
-          <div class="more__img">
-            <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
-          </div>
-        </a>
-      </div>
-
-
-
         <!-- Добавляем если нам нужны стрелки управления (параметр navigation)-->
         <div class="doctors__button-prev slider-button-prev"></div>
         <div class="doctors__button-next slider-button-next"></div>
 
+    </div>
+    <div class="doctors__more more">
+      <a href="#" class="more__link">
+        <span class="more__text">Показать все</span>
+        <div class="more__img">
+          <img src="img/arrow-down.svg" alt="arrow down" class="more__img-elem" width="27" height="12">
+        </div>
+      </a>
     </div>
 
   </div>
