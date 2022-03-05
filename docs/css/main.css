@@ -524,6 +524,185 @@ img {
   }
 }
 
+.accordion__item {
+  box-shadow: 0 0 28px 2px rgba(193, 189, 179, 0.17);
+  background-color: #ffffff;
+  padding: 11px;
+  border-radius: 8px;
+}
+@media screen and (max-width: 992px) {
+  .accordion__item {
+    padding: 6px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accordion__item {
+    padding: 0;
+  }
+}
+
+.accordion__item + .accordion__item {
+  margin-top: 15px;
+}
+@media screen and (max-width: 992px) {
+  .accordion__item + .accordion__item {
+    margin-top: 6px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accordion__item + .accordion__item {
+    margin-top: 10px;
+  }
+}
+
+.accordion__item-inner {
+  border-radius: 8px;
+  border: 1px solid rgba(209, 222, 222, 0.57);
+}
+@media screen and (max-width: 768px) {
+  .accordion__item-inner {
+    border-radius: initial;
+    border: none;
+  }
+}
+
+.accordion__control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+@media screen and (max-width: 992px) {
+  .accordion__control {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accordion__control {
+    padding: 25px 20px;
+  }
+}
+
+.accordion__title {
+  text-align: left;
+}
+@media screen and (max-width: 992px) {
+  .accordion__title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accordion__title {
+    font-size: 14px;
+  }
+}
+
+.accordion__icon {
+  width: 37px;
+  height: 37px;
+  border: 2px solid #7ba7af;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+@media screen and (max-width: 992px) {
+  .accordion__icon {
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accordion__icon {
+    border: 1px solid #7ba7af;
+    min-width: 26px;
+    width: 26px;
+    height: 26px;
+  }
+}
+.accordion__icon:hover {
+  background-color: #7ba7af;
+}
+.accordion__icon:hover::after, .accordion__icon:hover::before {
+  background-color: #fff;
+}
+.accordion__icon::after, .accordion__icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 17px;
+  height: 2px;
+  background-color: #7ba7af;
+}
+@media screen and (max-width: 992px) {
+  .accordion__icon::after, .accordion__icon::before {
+    width: 10px;
+    height: 2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accordion__icon::after, .accordion__icon::before {
+    height: 1px;
+  }
+}
+.accordion__icon::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.open .accordion__icon {
+  transform: rotate(45deg);
+  background-color: #7ba7af;
+}
+.open .accordion__icon::after, .open .accordion__icon::before {
+  background-color: #fff;
+}
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  will-change: max-height;
+  transition: max-height 0.3s ease-out;
+  box-sizing: content-box;
+}
+
+.open .accordion__content {
+  padding: 0 40px 40px;
+  opacity: 1;
+}
+@media screen and (max-width: 992px) {
+  .open .accordion__content {
+    padding: 0 20px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .open .accordion__content {
+    padding: 0 20px 25px;
+  }
+}
+
+.accordion__content p {
+  font-size: 16px;
+}
+@media screen and (max-width: 992px) {
+  .accordion__content p {
+    font-size: 12px;
+  }
+}
+
+.accordion__content > p + p {
+  margin-top: 20px;
+}
+@media screen and (max-width: 992px) {
+  .accordion__content > p + p {
+    margin-top: 10px;
+  }
+}
+
 .area__title {
   font-family: "SFProDisplay", "Arial", sans-serif;
   font-weight: 400;
@@ -1231,10 +1410,10 @@ button:focus {
 }
 @media screen and (max-width: 992px) {
   .direction {
-    padding: 50px 0 35px;
+    padding: 40px 0 30px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .direction {
     padding: 50px 0 50px;
   }
@@ -1416,17 +1595,34 @@ button:focus {
   display: inline-block;
 }
 
-.direction__steps {
+.direction__steps,
+.direction__faq {
   padding: 40px 0;
 }
 @media screen and (max-width: 992px) {
-  .direction__steps {
+  .direction__steps,
+.direction__faq {
     padding: 30px 0;
   }
 }
 @media screen and (max-width: 768px) {
-  .direction__steps {
+  .direction__steps,
+.direction__faq {
     padding: 40px 0;
+  }
+}
+
+.direction__faq-title {
+  margin-bottom: 55px;
+}
+@media screen and (max-width: 992px) {
+  .direction__faq-title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direction__faq-title {
+    margin-bottom: 45px;
   }
 }
 
@@ -1843,6 +2039,9 @@ button:focus {
   }
 }
 
+.faq__title {
+  margin-bottom: 55px;
+}
 .footer {
   padding: 55px 0;
   background-color: #fff;
