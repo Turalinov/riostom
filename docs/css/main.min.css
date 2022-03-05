@@ -1231,34 +1231,222 @@ button:focus {
 }
 @media screen and (max-width: 992px) {
   .direction {
-    padding: 50px 0 15px;
+    padding: 50px 0 35px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .direction {
-    padding: 50px 0 35px;
+    padding: 50px 0 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .direction .container {
+    margin: 0 50px;
+  }
+}
+
+.direction__link.back-link {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .direction__link.back-link {
+    display: none;
   }
 }
 
 .direction__title {
   text-align: center;
-  margin-bottom: 70px;
+  max-width: 830px;
+  margin: 0 auto 80px;
 }
 @media screen and (max-width: 992px) {
   .direction__title {
+    max-width: 590px;
+    margin: 0 auto 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direction__title {
+    text-align: left;
+    max-width: initial;
+    margin: 0 0 35px;
+  }
+}
+
+.direction__info {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .direction__info {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direction__info {
+    flex-direction: column;
+  }
+}
+
+.direction__elem {
+  flex-basis: 50%;
+}
+@media screen and (max-width: 768px) {
+  .direction__elem {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .direction__elem:last-child {
+    display: none;
+  }
+}
+
+.direction__elem + .direction__elem {
+  margin-left: 40px;
+}
+@media screen and (max-width: 992px) {
+  .direction__elem + .direction__elem {
+    margin-left: 0;
+  }
+}
+
+.direction__list {
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+@media screen and (max-width: 992px) {
+  .direction__list {
+    max-width: 260px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direction__list {
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+}
+
+.direction__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.direction__item + .direction__item {
+  margin-top: 30px;
+}
+@media screen and (max-width: 992px) {
+  .direction__item + .direction__item {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direction__item + .direction__item {
+    margin-top: 10px;
+  }
+}
+
+.direction__item-img {
+  width: 151px;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .direction__item-img {
+    width: 68px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direction__item-img {
+    width: 115px;
+  }
+}
+
+.direction__item-img-elem {
+  display: inline-block;
+}
+
+.direction__text {
+  font-size: 24px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 992px) {
+  .direction__text {
+    font-size: 14px;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direction__text {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+}
+
+.direction__btn-wrap.btn-wrap:hover::after {
+  bottom: -84px;
+}
+.direction__btn-wrap.btn-wrap:active::after {
+  bottom: -79px;
+}
+.direction__btn-wrap.btn-wrap::after {
+  bottom: -86px;
+}
+
+.direction-img {
+  max-width: 679px;
+}
+@media screen and (max-width: 992px) {
+  .direction-img {
+    max-width: 315px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.direction-img-elem {
+  display: inline-block;
+}
+
+.directions {
+  padding: 60px 0 70px;
+}
+@media screen and (max-width: 992px) {
+  .directions {
+    padding: 50px 0 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .directions {
+    padding: 50px 0 35px;
+  }
+}
+
+.directions__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 992px) {
+  .directions__title {
     text-align: left;
     margin-bottom: 35px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .direction__more.more {
+  .directions__more.more {
     display: none;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .direction__ticket {
+  .directions__ticket {
     max-height: initial !important;
   }
 }
