@@ -703,6 +703,69 @@ img {
   }
 }
 
+.advantages__title {
+  max-width: 875px;
+  margin-bottom: 55px;
+}
+@media screen and (max-width: 992px) {
+  .advantages__title {
+    max-width: 450px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__title {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+}
+
+.advantages__content {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .advantages__content {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__content {
+    flex-direction: column;
+    font-size: 16px;
+  }
+}
+
+.advantages__elem {
+  flex-basis: 50%;
+}
+
+.advantages__elem ul li + li {
+  margin-top: 50px;
+}
+@media screen and (max-width: 992px) {
+  .advantages__elem ul li + li {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__elem ul li + li {
+    margin-top: 40px;
+  }
+}
+
+.advantages__elem + .advantages__elem {
+  margin-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  .advantages__elem + .advantages__elem {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+
 .area__title {
   font-family: "SFProDisplay", "Arial", sans-serif;
   font-weight: 400;
@@ -1090,18 +1153,21 @@ button:focus {
 }
 
 .card__info-item,
-.process__content ul li {
+.process__content ul li,
+.advantages__elem ul li {
   padding-left: 26px;
   position: relative;
 }
 @media screen and (max-width: 992px) {
   .card__info-item,
-.process__content ul li {
+.process__content ul li,
+.advantages__elem ul li {
     padding-left: 22px;
   }
 }
 .card__info-item::after,
-.process__content ul li::after {
+.process__content ul li::after,
+.advantages__elem ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1115,7 +1181,8 @@ button:focus {
 }
 @media screen and (max-width: 992px) {
   .card__info-item::after,
-.process__content ul li::after {
+.process__content ul li::after,
+.advantages__elem ul li::after {
     top: 0;
     width: 11px;
     height: 19px;
@@ -1406,16 +1473,16 @@ button:focus {
 }
 
 .direction {
-  padding: 60px 0 70px;
+  padding: 60px 0 0;
 }
 @media screen and (max-width: 992px) {
   .direction {
-    padding: 40px 0 30px;
+    padding: 40px 0 0;
   }
 }
 @media screen and (max-width: 768px) {
   .direction {
-    padding: 50px 0 50px;
+    padding: 50px 0 0;
   }
 }
 
@@ -1591,24 +1658,58 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .direction__btn.btn {
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+}
+
 .direction-img-elem {
   display: inline-block;
 }
 
-.direction__steps,
-.direction__faq {
+.direction__steps {
   padding: 40px 0;
 }
 @media screen and (max-width: 992px) {
-  .direction__steps,
-.direction__faq {
+  .direction__steps {
     padding: 30px 0;
   }
 }
 @media screen and (max-width: 768px) {
-  .direction__steps,
-.direction__faq {
+  .direction__steps {
     padding: 40px 0;
+  }
+}
+
+.direction__faq {
+  padding: 80px 0 100px;
+}
+@media screen and (max-width: 992px) {
+  .direction__faq {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direction__faq {
+    padding: 40px 0;
+  }
+}
+
+.direction__advantages {
+  background-color: #fff;
+  padding: 80px 0 50px;
+}
+@media screen and (max-width: 992px) {
+  .direction__advantages {
+    padding: 44px 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direction__advantages {
+    padding: 30px 0 60px;
+    background-color: initial;
   }
 }
 
@@ -3110,6 +3211,60 @@ button:focus {
 
 .ticket__details-link {
   margin: 10px auto 0;
+}
+
+.video {
+  max-width: 537px;
+  position: relative;
+  height: 360px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .video {
+    height: 190px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video {
+    height: 218px;
+  }
+}
+
+.video__preview {
+  overflow: hidden;
+  height: 100%;
+}
+
+.video__preview-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.video__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90px;
+  height: 92px;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .video__btn {
+    width: 48px;
+    height: 49px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video__btn {
+    width: 54px;
+    height: 55px;
+  }
+}
+.video__btn:hover {
+  opacity: 1;
 }
 
 .work {
