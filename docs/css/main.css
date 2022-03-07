@@ -361,6 +361,13 @@ template {
 @font-face {
   font-family: SFProDisplay;
   font-display: swap;
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
   src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -521,6 +528,206 @@ img {
 @media screen and (max-width: 768px) {
   .container {
     margin: 0 30px;
+  }
+}
+
+.about__info {
+  padding: 90px 0 30px;
+}
+@media screen and (max-width: 992px) {
+  .about__info {
+    padding: 30px 0 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__info {
+    padding: 40px 0 15px;
+  }
+}
+
+.about__info .container {
+  position: relative;
+}
+
+.about-wrap {
+  max-width: 590px;
+}
+@media screen and (max-width: 1190px) {
+  .about-wrap {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .about-wrap {
+    max-width: 390px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-wrap {
+    max-width: 100%;
+  }
+}
+
+.about__title {
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 992px) {
+  .about__title {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__title {
+    margin-bottom: 35px;
+  }
+}
+
+.about__desc {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .about__desc {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__desc {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.about__content {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 992px) {
+  .about__content {
+    font-size: 12px;
+    margin-bottom: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__content {
+    font-size: 14px;
+    margin-bottom: 38px;
+  }
+}
+
+.about__content ul li + li {
+  margin-top: 28px;
+}
+@media screen and (max-width: 992px) {
+  .about__content ul li + li {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__content ul li + li {
+    margin-top: 32px;
+  }
+}
+
+.about__btn {
+  font-family: "SFProDisplay", "Arial", sans-serif;
+  font-weight: 500;
+  margin-bottom: 55px;
+}
+@media screen and (max-width: 992px) {
+  .about__btn {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__btn {
+    margin-bottom: 380px;
+  }
+}
+
+.about__img {
+  position: absolute;
+  max-width: 658px;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 1300px) {
+  .about__img {
+    right: -100px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .about__img {
+    right: -150px;
+  }
+}
+@media screen and (max-width: 1109px) {
+  .about__img {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .about__img {
+    max-width: 310px;
+    right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__img {
+    max-width: 357px;
+    right: calc(50% - 178.5px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about__billet.billet {
+    display: none;
+  }
+}
+
+.about__billet.billet {
+  position: absolute;
+}
+
+.about__billet--first {
+  right: 420px;
+  bottom: 260px;
+}
+@media screen and (max-width: 1300px) {
+  .about__billet--first {
+    right: 320px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .about__billet--first {
+    right: 270px;
+  }
+}
+@media screen and (max-width: 1109px) {
+  .about__billet--first {
+    right: 130px;
+    bottom: 220px;
+  }
+}
+
+.about__billet--second {
+  right: -10px;
+  bottom: 100px;
+}
+@media screen and (max-width: 1300px) {
+  .about__billet--second {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .about__billet--second {
+    right: 0px;
+  }
+}
+@media screen and (max-width: 1109px) {
+  .about__billet--second {
+    right: -40px;
   }
 }
 
@@ -880,6 +1087,51 @@ img {
   }
 }
 
+.billet {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding: 20px 45px;
+  z-index: 1;
+}
+.billet::before, .billet::after {
+  content: "";
+  position: absolute;
+}
+.billet::before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 15px 1px rgba(198, 198, 198, 0.17);
+  background-color: #ffffff;
+  opacity: 0.93;
+  transform: skewX(345deg);
+  border-radius: 8px;
+  z-index: -1;
+}
+.billet::after {
+  left: 50%;
+  top: 50%;
+  width: 95%;
+  height: 90%;
+  transform: translate(-50%, -50%) skewX(-13deg);
+  border-radius: 8px;
+  border: 1px solid #e9f0f1;
+}
+
+.billet__title {
+  font-family: "SFProDisplay", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #727d84;
+}
+
+.billet__position {
+  font-size: 12px;
+  opacity: 0.63;
+}
+
 .btn-wrap {
   position: relative;
   display: inline-block;
@@ -1005,6 +1257,31 @@ button:focus {
   background-position: center;
   pointer-events: none;
   z-index: -1;
+}
+
+.btn--bordered {
+  display: inline-block;
+  border: 2px solid rgba(98, 152, 160, 0.7);
+  border-radius: 10px;
+  padding: 37px 40px;
+  font-size: 18px;
+  letter-spacing: 2.04px;
+  color: #6298a0;
+}
+@media screen and (max-width: 992px) {
+  .btn--bordered {
+    font-size: 12px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn--bordered {
+    font-size: 15px;
+    padding: 25px 20px;
+  }
+}
+.btn--bordered:hover {
+  color: #6298a0;
 }
 
 .card {
@@ -1158,20 +1435,23 @@ button:focus {
 
 .card__info-item,
 .process__content ul li,
-.advantages__elem ul li {
+.advantages__elem ul li,
+.about__content ul li {
   padding-left: 26px;
   position: relative;
 }
 @media screen and (max-width: 992px) {
   .card__info-item,
 .process__content ul li,
-.advantages__elem ul li {
+.advantages__elem ul li,
+.about__content ul li {
     padding-left: 22px;
   }
 }
 .card__info-item::after,
 .process__content ul li::after,
-.advantages__elem ul li::after {
+.advantages__elem ul li::after,
+.about__content ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1186,7 +1466,8 @@ button:focus {
 @media screen and (max-width: 992px) {
   .card__info-item::after,
 .process__content ul li::after,
-.advantages__elem ul li::after {
+.advantages__elem ul li::after,
+.about__content ul li::after {
     top: 0;
     width: 11px;
     height: 19px;
