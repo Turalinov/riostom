@@ -3297,6 +3297,142 @@ button:focus {
   }
 }
 
+.photos {
+  padding: 25px 0 120px;
+}
+@media screen and (max-width: 992px) {
+  .photos {
+    padding: 25px 0 75px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photos {
+    padding: 15px 0 55px;
+  }
+}
+
+.photos__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  .photos__title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photos__title {
+    text-align: left;
+  }
+}
+
+/* slider */
+.photos__slider-wrap {
+  max-width: 845px;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .photos__slider-wrap {
+    max-width: 440px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photos__slider-wrap {
+    max-width: 315px;
+  }
+}
+
+.photos__slider {
+  overflow: hidden;
+  height: 608px;
+}
+@media screen and (max-width: 992px) {
+  .photos__slider {
+    height: 315px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photos__slider {
+    height: 225px;
+    overflow: initial;
+  }
+}
+
+.photos__slider .swiper-wrapper {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .photos__button-prev,
+.photos__button-next {
+    display: none;
+  }
+}
+
+.photos__button-prev.slider-button-prev {
+  left: -90px;
+}
+@media screen and (max-width: 992px) {
+  .photos__button-prev.slider-button-prev {
+    left: -50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photos__button-prev.slider-button-prev {
+    left: -50px;
+  }
+}
+
+.photos__button-next.slider-button-next {
+  right: -90px;
+  left: auto;
+}
+@media screen and (max-width: 992px) {
+  .photos__button-next.slider-button-next {
+    right: -50px;
+  }
+}
+
+/* slider */
+.photos__item {
+  width: 845px;
+  max-height: 608px;
+  box-shadow: 0 0 28px 2px rgba(193, 189, 179, 0.17);
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 28px 20px;
+}
+@media screen and (max-width: 992px) {
+  .photos__item {
+    width: 440px;
+    max-height: 315px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photos__item {
+    width: 313px;
+    max-height: 225px;
+    padding: 10px;
+  }
+}
+
+.photos__item-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.photos__item-img {
+  overflow: hidden;
+  height: 100%;
+}
+
+.photos__item-img-elem {
+  object-fit: contain;
+  object-position: center;
+}
+
 .privelege {
   padding: 91px 0 106px;
   background-color: #fff;
@@ -3532,6 +3668,54 @@ button:focus {
   }
 }
 
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-fraction {
+  bottom: -45px;
+}
+@media screen and (max-width: 992px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-fraction {
+    bottom: -35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-fraction {
+    bottom: -30px;
+  }
+}
+
+.swiper-pagination-current {
+  color: #62767a;
+  font-size: 16px;
+}
+
+.swiper-pagination-total {
+  color: #a1b2b5;
+  font-size: 12px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet {
+  margin: 0 10px;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: 1px solid #7ba7af;
+  opacity: 0.47;
+}
+@media screen and (max-width: 992px) {
+  .swiper-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-image: linear-gradient(to top, #377582 0%, #dbeded 100%);
+  opacity: 1;
+  border: none;
+}
+
 .slider-button-prev,
 .slider-button-next {
   position: absolute;
@@ -3545,6 +3729,13 @@ button:focus {
   background-color: #6e9da7;
   z-index: 10;
   cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .slider-button-prev,
+.slider-button-next {
+    width: 41px;
+    height: 41px;
+  }
 }
 .slider-button-prev::after, .slider-button-prev::before,
 .slider-button-next::after,
