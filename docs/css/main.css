@@ -2968,6 +2968,139 @@ button:focus {
   }
 }
 
+.license {
+  padding: 90px 0 120px;
+}
+@media screen and (max-width: 992px) {
+  .license {
+    padding: 40px 0 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .license {
+    padding: 25px 0 55px;
+  }
+}
+
+.license__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  .license__title {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .license__title {
+    margin-bottom: 25px;
+  }
+}
+
+/* slider */
+.license__slider-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .license__slider-wrap {
+    max-width: 590px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .license__slider-wrap {
+    max-width: 280px;
+  }
+}
+
+.license__slider {
+  overflow: hidden;
+  height: 440px;
+}
+@media screen and (max-width: 992px) {
+  .license__slider {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .license__slider {
+    height: 260px;
+  }
+}
+
+.license__slider .swiper-wrapper {
+  box-sizing: border-box;
+}
+
+.license__button-prev.slider-button-prev {
+  left: -30px;
+}
+@media screen and (max-width: 992px) {
+  .license__button-prev.slider-button-prev {
+    left: -10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .license__button-prev.slider-button-prev {
+    left: -20px;
+  }
+}
+
+.license__button-next.slider-button-next {
+  right: -30px;
+  left: auto;
+}
+@media screen and (max-width: 992px) {
+  .license__button-next.slider-button-next {
+    right: -10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .license__button-next.slider-button-next {
+    right: -20px;
+  }
+}
+
+/* slider */
+.license__item {
+  width: 365px;
+  max-height: 440px;
+  box-shadow: 0 0 28px 2px rgba(193, 189, 179, 0.17);
+  border-radius: 8px;
+  background-color: #f7f6f5;
+  transition: 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .license__item {
+    width: 190px;
+    max-height: 230px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .license__item {
+    width: 205px;
+    max-height: 260px;
+  }
+}
+
+.license__item-wrap {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.license__item-img {
+  overflow: hidden;
+  height: 100%;
+}
+
+.license__item-img-elem {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .logo__link {
   display: block;
   max-width: 230px;
